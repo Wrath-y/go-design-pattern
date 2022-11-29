@@ -2,12 +2,18 @@ package factory_abstract
 
 func Run() {
 	var factory AbstractFactory
+	var tv ITelevision
+	var air IAirConditioner
 
-	factory = new(HuaWeiFactory)
-	factory.CreateTelevision().Watch()
-	factory.CreateAirConditioner().SetTemperature(1)
+	factory = &HuaWeiFactory{}
+	tv = factory.CreateTelevision()
+	air = factory.CreateAirConditioner()
+	tv.Watch()
+	air.SetTemperature(1)
 
-	factory = new(MiFactory)
-	factory.CreateTelevision().Watch()
-	factory.CreateAirConditioner().SetTemperature(1)
+	factory = &MiFactory{}
+	tv = factory.CreateTelevision()
+	air = factory.CreateAirConditioner()
+	tv.Watch()
+	air.SetTemperature(2)
 }
