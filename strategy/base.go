@@ -6,6 +6,6 @@ type PaymentMethod interface {
 
 type PaymentProcessor struct{}
 
-func (pp *PaymentProcessor) Pay(amount float64, paymentMethod PaymentMethod) string {
+func (pp *PaymentProcessor) ProcessPayment(amount float64, paymentMethod PaymentMethod) string {
 	return paymentMethod.Pay(amount)
 }
