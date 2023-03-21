@@ -7,6 +7,7 @@ design_models/
 ├── factory_simple         //简单工厂模式
 ├── factory_method         //工厂模式
 ├── factory_abstract       //抽象工厂模式
+├── strategy               //策略模式
 ```
 
 ## 运行方式
