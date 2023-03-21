@@ -1,6 +1,11 @@
 package factory_simple
 
 func Run() {
-	println(NewPrinter("cn").Print("你好"))
-	println(NewPrinter("cn").Print("Hello"))
+	factory := &Factory{}
+
+	productA := factory.CreateProduct("A")
+	productA.Operation()
+
+	productB := factory.CreateProduct("B")
+	productB.Operation()
 }
