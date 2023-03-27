@@ -16,9 +16,10 @@
 +--------------------+       +--------------------+         +--------------------+       +--------------------+
 | CreateProduct()    |<------| Operation()        |         | CreateProduct()    |<------| Operation()        |
 +--------------------+       +--------------------+         +--------------------+       +--------------------+
-                                                            
-                                                            
-                                                            
-                                                            
-
 ```
+
+在这个UML类图中，`Factory` 是一个抽象工厂类，包含一个名为 `CreateProduct` 的方法，用于创建具体的产品对象。`Product` 是一个抽象类，定义了 `Operation` 的抽象方法。
+
+`ConcreteCreatorA` 和 `ConcreteCreatorB` 是 `Factory` 接口的具体实现，用来创建特定类型的 `Product`。
+
+`ConcreteProductA` 和 `ConcreteProductB` 是 `Product` 接口的具体实现，用来创建产品。
