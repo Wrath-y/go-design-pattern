@@ -1,14 +1,14 @@
 package factory_abstract
 
 type AbstractFactory interface {
-	CreateTelevision() ITelevision
-	CreateAirConditioner() IAirConditioner
+	CreateProductA() ProductA
+	CreateProductB() ProductB
 }
 
-type ITelevision interface {
-	Watch()
+type ProductA interface {
+	OperationA() string
 }
 
-type IAirConditioner interface {
-	SetTemperature(int)
+type ProductB interface {
+	OperationB() string
 }
