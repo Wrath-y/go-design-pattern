@@ -1,0 +1,28 @@
+@startuml
+interface Handler {
+    +SetNextHandler(handler Handler)
+    +HandleRequest(request int)
+}
+
+class ConcreteHandlerA {
+    -nextHandler Handler
+	  +SetNextHandler(handler Handler)
+    +HandleRequest(request int)
+}
+
+class ConcreteHandlerB {
+    -nextHandler Handler
+	  +SetNextHandler(handler Handler)
+    +HandleRequest(request int)
+}
+
+class ConcreteHandlerC {
+    -nextHandler Handler
+	  +SetNextHandler(handler Handler)
+    +HandleRequest(request int)
+}
+
+Handler <|-- ConcreteHandlerA
+Handler <|-- ConcreteHandlerB
+Handler <|-- ConcreteHandlerC
+@enduml
