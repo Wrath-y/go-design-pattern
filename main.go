@@ -1,7 +1,9 @@
 package main
 
-import "go-design-models/builder"
+import (
+	"go-design-models/proxy"
+)
 
 func main() {
-	builder.Run()
+	proxy.Run()
 }
