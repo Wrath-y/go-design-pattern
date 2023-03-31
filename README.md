@@ -5,6 +5,7 @@
 go-design-models/
 ├── builder                //建造者模式
 ├── chain_of_responsibility//责任链模式
+├── decorator              //装饰器模式
 ├── factory_abstract       //抽象工厂模式
 ├── factory_method         //工厂模式
 ├── factory_simple         //简单工厂模式

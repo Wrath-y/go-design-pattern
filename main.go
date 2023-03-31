@@ -1,9 +1,9 @@
 package main
 
 import (
-	"go-design-models/proxy"
+	"go-design-models/decorator"
 )
 
 func main() {
-	proxy.Run()
+	decorator.Run()
 }
